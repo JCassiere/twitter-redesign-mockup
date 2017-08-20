@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Twitter Redesign</title>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<nav class="navbar navbar-toggleable-sm navbar-light">
+	  <button class="navbar-toggler navbar__avatar-pic-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <img class="avatar-pic" src="lego-head.jpg" alt="Profile Picture">
+    </button>
+		<a href="#" class="navbar__twitter-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		<a href="#" class="navbar__avatar-link"><img class="avatar-pic" src="lego-head.jpg" alt="Profile Picture"></a>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	    	<section class="navbar__pencil-section">
+		      <li class="nav-item navbar__pencil">
+		        <a class="nav-link" href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+		      </li>
+	      </section>
+	      <section class="navbar__others-section">
+		      <li class="nav-item">
+		        <a class="nav-link" href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#"><i class="fa fa-hashtag" aria-hidden="true"></i></a>
+		      </li>
+	      </section>
+	    </ul>
+	  </div>
+    <form class="form-inline">
+			<input type="text" class="search-rounded" placeholder="Search">
+			<button type="button" class="search-button"><i class="fa fa-search fa" aria-hidden="true"></i></button>
+    </form>
+	</nav>
+	<main>
+		<section class="page-info">
+			<section class="page-info__profile-pic"><img src="kerem.png" alt="Profile Picture"></section>
+			<section class="page-info__name">Kerem Suer</section>
+			<section class="page-info__bio">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.</section>
+			<section class="page-info__website"><i class="fa fa-link" aria-hidden="true"></i><a href="#">www.kerem.co</a></section>
+			<section class="page-info__follow"><button type="button">Follow</button></section>
+		</section>
+		<section class="posts">
+		  <section class="stats">
+		  	<a href="#" class="stats__stat stats__tweets"><span>TWEETS</span><span class="stats__number">200</span></a>
+		  	<a href="#" class="stats__stat"><span>PHOTOS/VIDEOS</span><span class="stats__number">200</span></a>
+		  	<a href="#" class="stats__stat"><span>FOLLOWING</span><span class="stats__number">200</span></a>
+		  	<a href="#" class="stats__stat"><span>FOLLOWERS</span><span class="stats__number">1M</span></a>
+		  </section>
+			<section class="post">
+				<section class="post__profile-pic"><img src="kerem.png" alt="Profile Picture"></section>
+				<section class="post-body">
+				  <section class="post-header">
+				  	<section class="post-header__name-and-handle">
+						  <span class="post-header__name">Kerem Suer</span><span class="post-header__handle">@kerem</span>
+					  </section>
+					  <section class="post-header__time">
+					  	2m
+					  </section>
+				  </section>
+					<section class="post-body__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui oficia deserunt mollit anim id est laborum.</section>
+					<section class="post-footer">
+					  <section class="post-footer__left">
+							<i class="fa fa-share" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-refresh" aria-hidden="true"><span class="post-footer__number">20</span></i>
+							<i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+						</section>
+						<section class="post-footer__right">
+							<i class="fa fa-expand" aria-hidden="true"></i>
+						</section>
+					</section>
+				</section>
+			</section>
+			<section class="post">
+				<section class="post__profile-pic"><img src="half-face.png" alt="Profile Picture"></section>
+				<section class="post-body">
+				  <section class="post-header">
+				  	<section class="post-header__name-and-handle">
+						  <span class="post-header__name"><i class="fa fa-refresh green-retweet" aria-hidden="true"></i>AxelHerrmann</span><span class="post-header__handle">@axel_herrmann</span>
+					  </section>
+					  <section class="post-header__time">
+					  	1h
+					  </section>
+				  </section>
+					<section class="post-body__text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</section>
+					<section class="post-footer">
+					  <section class="post-footer__left">
+							<i class="fa fa-share" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-refresh" aria-hidden="true"></i>
+							<i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+						</section>
+						<section class="post-footer__right">
+							<i class="fa fa-expand" aria-hidden="true"></i>
+						</section>
+					</section>
+				</section>
+			</section>
+			<section class="post">
+				<section class="post__profile-pic"><img src="kerem.png" alt="Profile Picture"></section>
+				<section class="post-body">
+				  <section class="post-header">
+				  	<section class="post-header__name-and-handle">
+						  <span class="post-header__name">Kerem Suer</span><span class="post-header__handle">@kerem</span>
+					  </section>
+					  <section class="post-header__time">
+					  	5h
+					  </section>
+				  </section>
+	        <iframe class="post-body__video" src="https://www.youtube.com/embed/FV5mib31IhA" frameborder="0" allowfullscreen></iframe>
+	        <section class="post-footer">
+					  <section class="post-footer__left">
+							<i class="fa fa-share" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-refresh" aria-hidden="true"></i>
+							<i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+						</section>
+						<section class="post-footer__right">
+							<i class="fa fa-expand" aria-hidden="true"></i>
+						</section>
+					</section>
+				</section>
+			</section>
+			<section class="post">
+				<section class="post__profile-pic"><img src="kerem.png" alt="Profile Picture"></section>
+				<section class="post-body">
+				  <section class="post-header">
+				  	<section class="post-header__name-and-handle">
+						  <span class="post-header__name">Kerem Suer</span><span class="post-header__handle">@kerem</span>
+					  </section>
+					  <section class="post-header__time">
+					  	Yesterday
+					  </section>
+				  </section>
+					<section class="post-body__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui oficia deserunt mollit anim id est laborum.</section>
+					<section class="post-footer">
+					  <section class="post-footer__left">
+							<i class="fa fa-share" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-refresh" aria-hidden="true"></i>
+							<i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+						</section>
+						<section class="post-footer__right">
+							<i class="fa fa-expand" aria-hidden="true"></i>
+						</section>
+					</section>
+				</section>
+			</section>
+		</section>
+		<section class="trending">
+			<p class="trending__title">PHILLIPINES TRENDS</p>
+			<a href="#" class="trending__link">#DONTSTOPLYRICVIDEO</a>
+			<a href="#" class="trending__link">#MLFTSItsComplicated</a>
+			<a href="#" class="trending__link">#TangaLangMoments</a>
+			<a href="#" class="trending__link">#a5WordsForYou</a>
+			<a href="#" class="trending__link">#5SOSDONTSTOPLYRICVIDEO</a>
+			<a href="#" class="trending__link">Happy Chicserifics Day</a>
+			<a href="#" class="trending__link">Dr. Fluke</a>
+			<a href="#" class="trending__link">JaDine for TBYD The Movie</a>
+			<a href="#" class="trending__link">Galawang JaXel</a>
+			<a href="#" class="trending__link">JulQuen For OBTCHTheMovie</a>
+		</section>
+		<section class="activities">
+			<p class="activities__title">ACTIVITIES</p>
+			<p class="activities__activity">
+			  <i class="fa fa-plus" aria-hidden="true"></i>Followed <a href="#">Eddie</a>
+			</p>
+			<p class="activities__activity">
+			  <i class="fa fa-share" aria-hidden="true"></i>Replied To <a href="#">Alexander Tweet</a>
+			</p>
+			<p class="activities__activity">
+			  <i class="fa fa-refresh" aria-hidden="true"></i>Retweeted <a href="#">Eric Tweet</a>
+			</p>
+			<p class="activities__activity">
+			  <i class="fa fa-refresh" aria-hidden="true"></i>Retweeted <a href="#">Eric Tweet</a>
+			</p>
+			<p class="activities__activity">
+			  <i class="fa fa-star" aria-hidden="true"></i>Favorited <a href="#">John Tweet</a>
+			</p>
+		</section>
+		<section class="media">
+		  <a href="#" class="media__shoes"></a>
+		  <a href="#" class="media__tea"></a>
+		  <a href="#" class="media__cactus"></a>
+		  <a href="#" class="media__chair"></a>
+		  <a href="#" class="media__lemons"></a>
+		  <a href="#" class="media__leaf"></a>
+		  <a href="#" class="media__bridge"></a>
+		  <a href="#" class="media__buoy"></a>
+		  <a href="#" class="media__clothesline"></a>
+		</section>
+
+		<section class="who-to-follow">
+			<p class="who-to-follow__title">WHO TO FOLLOW <a href="#">More</a></p>
+			<section class="who-to-follow__person">
+			  <img src="chris-spooner.png" alt="Chris Spooner">
+			  <section class="name-and-description">
+			  	<p class="name-and-description__name">Chris Spooner</p>
+			  	<p class="name-and-description__description">Designer, Blogger</p>
+			  </section>
+			  <a href="#"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a>
+		  </section>
+			<section class="who-to-follow__person">
+			  <img src="thorleifsson.png" alt="Thorleifsson">
+			  <section class="name-and-description">
+			  	<p class="name-and-description__name">HaraldurThorleifs...</p>
+			  	<p class="name-and-description__description">Creative Director</p>
+			  </section>
+			  <a href="#"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a>
+		  </section>
+			<section class="who-to-follow__person">
+			  <img src="uxbooth.png" alt="UX Booth">
+			  <section class="name-and-description">
+			  	<p class="name-and-description__name">James Fletcher</p>
+			  	<p class="name-and-description__description">Designer, Builder...</p>
+			  </section>
+			  <a href="#"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a>
+		  </section>
+		  <section class="who-to-follow__person">
+			  <img src="nathan-powell.png" alt="Nathan Powell">
+			  <section class="name-and-description">
+			  	<p class="name-and-description__name">Nathan Powell</p>
+			  	<p class="name-and-description__description">Design Consultant</p>
+			  </section>
+			  <a href="#"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a>
+		  </section>
+		  <section class="who-to-follow__person">
+			  <img src="nick-slater.png" alt="Nick Slater">
+			  <section class="name-and-description">
+			  	<p class="name-and-description__name">Nick Slater</p>
+			  	<p class="name-and-description__description">Illustrator</p>
+			  </section>
+			  <a href="#"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a>
+		  </section>
+		</section>
+	</main>
+</body>
+</html>
